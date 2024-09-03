@@ -22,7 +22,8 @@
     "migration:create": "typeorm migration:create -d databases/migrations/",
     "typeorm:cli": "node --require ts-node/register --require tsconfig-paths/register ./node_modules/typeorm/cli.js -d databases/ormconfig.ts",
     "migration:generate": "npm run typeorm:cli migration:generate",
-    "migration:run": "npm run typeorm:cli migration:run"
+    "migration:run": "npm run typeorm:cli migration:run",
+    "migration:revert": "npm run typeorm:cli migration:revert"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
